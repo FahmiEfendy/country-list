@@ -19,7 +19,7 @@ const Home = () => {
         <InputField setValue={setSearchValue} />
         <SelectField value={region} setValue={setRegion} />
       </Box>
-      <CountryList />
+      <CountryList region={region} searchValue={searchValue} />
     </Container>
   );
 };
