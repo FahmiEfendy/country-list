@@ -1,7 +1,10 @@
-@import "../styles/base.scss";
+@import "../../styles/base.scss";
 
 .container {
+  padding: 5rem !important;
+
+  .box {
     @include directionX;
-    margin-top: 5rem;
     justify-content: space-between;
+  }
 }

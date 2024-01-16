@@ -1,0 +1,10 @@
+@import "../../styles/base.scss";
+
+.container__grid {
+  margin-top: 0rem !important;
+
+  .container__grid_item {
+    @include directionY;
+    justify-content: center;
+  }
+}
