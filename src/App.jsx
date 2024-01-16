@@ -73,8 +73,6 @@ function App({ router }) {
     },
   });
 
-  console.log(theme.palette);
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
