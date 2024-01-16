@@ -4,11 +4,18 @@ import { useEffect, useState } from "react";
 import CountryItem from "../CountryItem";
 import classes from "./style.module.scss";
 import { callApi } from "../../domain/api";
+import { useNavigate } from "react-router-dom";
 
 const CountryList = ({ region, searchValue }) => {
+  const navigate = useNavigate();
+
   const [countryList, setCountryList] = useState([]);
   const [countryListByName, setCountryListByName] = useState([]);
   const [countryListByRegion, setCountryListByRegion] = useState([]);
+
+  const countryDetailHandler = (id) => {
+    navigate(`/${id}`);
+  };
 
   useEffect(() => {
     const getAllCountries = async () => {
@@ -108,6 +115,9 @@ const CountryList = ({ region, searchValue }) => {
               key={data.key}
               xs={3}
               className={classes.container__grid_item}
+              onClick={() => {
+                countryDetailHandler(data.name.common);
+              }}
             >
               <CountryItem
                 name={data.name.common}
@@ -128,6 +138,9 @@ const CountryList = ({ region, searchValue }) => {
                 key={data.key}
                 xs={3}
                 className={classes.container__grid_item}
+                onClick={() => {
+                  countryDetailHandler(data.name.common);
+                }}
               >
                 <CountryItem
                   name={data.name.common}
@@ -154,6 +167,9 @@ const CountryList = ({ region, searchValue }) => {
                 key={data.key}
                 xs={3}
                 className={classes.container__grid_item}
+                onClick={() => {
+                  countryDetailHandler(data.name.common);
+                }}
               >
                 <CountryItem
                   name={data.name.common}

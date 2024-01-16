@@ -1,0 +1,57 @@
+@import "../../styles/base.scss";
+
+.container {
+  padding: 5rem !important;
+
+  .back_btn {
+    padding: 0.5rem 2rem;
+    color: $light-mode-text;
+    text-transform: capitalize;
+  }
+
+  .containner__inner {
+    margin-top: 3rem;
+
+    .countryImg {
+      width: 700px;
+      height: 400px;
+      filter: drop-shadow(5px 5px 30px #dbdbdb);
+    }
+
+    .container__right {
+      padding-top: 2rem;
+
+      .typography {
+        font-family: $font-family;
+        color: $light-mode-text;
+      }
+
+      h5 {
+        @extend .typography;
+        font-weight: $font-weight-800;
+        font-size: 2.5em;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        @extend .typography;
+        display: inline-block;
+        font-size: 1.2em;
+      }
+
+      .last__row {
+        margin-top: 2rem;
+
+        .chip {
+          border-radius: 5px;
+          margin: 0 0.3rem;
+          padding: 0 1.5rem;
+        }
+
+        .chip:nth-of-type(1) {
+          margin-left: 1.2rem;
+        }
+      }
+    }
+  }
+}
