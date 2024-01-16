@@ -3,8 +3,17 @@
 .container {
   padding: 5rem !important;
 
+  @include apply-at-md-size {
+    padding: 2rem !important;
+  }
+
   .box {
     @include directionX;
     justify-content: space-between;
+
+    @include apply-at-md-size {
+      @include directionY;
+      height: 100%;
+    }
   }
 }

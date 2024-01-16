@@ -105,7 +105,12 @@ const CountryList = ({ region, searchValue }) => {
   }, [region]);
 
   return (
-    <Grid container spacing={10} className={classes.container__grid}>
+    <Grid
+      container
+      rowSpacing={5}
+      columnSpacing={10}
+      className={classes.container__grid}
+    >
       {searchValue === "" &&
         region === "" &&
         countryList?.map((data) => {
@@ -113,7 +118,10 @@ const CountryList = ({ region, searchValue }) => {
             <Grid
               item
               key={data.key}
-              xs={3}
+              xs={12}
+              sm={6}
+              lg={3}
+              md={4}
               className={classes.container__grid_item}
               onClick={() => {
                 countryDetailHandler(data.name.common);
@@ -136,7 +144,10 @@ const CountryList = ({ region, searchValue }) => {
               <Grid
                 item
                 key={data.key}
-                xs={3}
+                xs={12}
+                sm={6}
+                lg={3}
+                md={4}
                 className={classes.container__grid_item}
                 onClick={() => {
                   countryDetailHandler(data.name.common);
@@ -165,7 +176,10 @@ const CountryList = ({ region, searchValue }) => {
               <Grid
                 item
                 key={data.key}
-                xs={3}
+                xs={12}
+                sm={6}
+                lg={3}
+                md={4}
                 className={classes.container__grid_item}
                 onClick={() => {
                   countryDetailHandler(data.name.common);

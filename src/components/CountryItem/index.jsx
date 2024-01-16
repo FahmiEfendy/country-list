@@ -14,7 +14,7 @@ const CountryItem = ({ name, img, population, region, capital }) => {
       <CardContent className={classes.card__content}>
         <Typography variant="h5">{name}</Typography>
         <Typography variant="body2">
-          <b>Population:</b> {population}
+          <b>Population:</b> {population.toLocaleString()}
         </Typography>
         <Typography variant="body2">
           <b>Region:</b> {region}
