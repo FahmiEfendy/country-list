@@ -1,34 +1,32 @@
 @import "../../styles/base.scss";
 
 .appbar {
-  background-color: $light-mode-background !important;
   padding: 0 4rem;
 
   @include apply-at-md-size {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 
   .typography {
     font-family: $font-family;
-    color: $light-mode-text;
   }
 
   h5 {
     @extend .typography;
     font-weight: $font-weight-800;
 
-    @include apply-at-xs-size{
-      font-size: 1em
+    @include apply-at-xs-size {
+      font-size: 1em;
     }
   }
 
-  p {
+  button {
     @extend .typography;
     font-weight: $font-weight-600;
     text-transform: capitalize;
 
-    @include apply-at-xs-size{
-      font-size: .8em
+    @include apply-at-xs-size {
+      font-size: 0.8em;
     }
   }
 }

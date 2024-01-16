@@ -1,9 +1,9 @@
 import NightsStayIcon from "@mui/icons-material/NightsStay";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 
 import classes from "./style.module.scss";
 
-const Navbar = () => {
+const Navbar = ({ onClick }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" className={classes.appbar}>
@@ -11,10 +11,9 @@ const Navbar = () => {
           <Typography variant="h5" sx={{ flexGrow: 1 }}>
             Where in the world?
           </Typography>
-          <IconButton>
-            <NightsStayIcon />
-          </IconButton>
-          <Typography>Dark Mode</Typography>
+          <Button startIcon={<NightsStayIcon />} onClick={onClick}>
+            Dark Mode
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

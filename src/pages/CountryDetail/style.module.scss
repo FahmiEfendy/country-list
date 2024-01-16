@@ -9,7 +9,6 @@
 
   .back_btn {
     padding: 0.5rem 2rem;
-    color: $light-mode-text;
     text-transform: capitalize;
   }
 
@@ -22,7 +21,6 @@
       .countryImg {
         width: 100%;
         height: 80%;
-        filter: drop-shadow(5px 5px 30px #dbdbdb);
 
         @include apply-at-xxl-size {
           height: 100%;
@@ -43,7 +41,6 @@
 
       .typography {
         font-family: $font-family;
-        color: $light-mode-text;
       }
 
       h5 {

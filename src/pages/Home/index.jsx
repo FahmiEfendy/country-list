@@ -10,9 +10,6 @@ const Home = () => {
   const [region, setRegion] = useState("");
   const [searchValue, setSearchValue] = useState("");
 
-  console.log("Search Value", searchValue);
-  console.log("Region", region);
-
   return (
     <Container maxWidth={false} className={classes.container}>
       <Box className={classes.box}>
