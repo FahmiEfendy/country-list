@@ -1,0 +1,7 @@
+@import "../styles/base.scss";
+
+.container {
+    @include directionX;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
